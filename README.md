@@ -49,31 +49,38 @@ You can visit the live version of the portfolio [https://web3uservj.web.app/](#)
    cd portfolio
 
 4. Package Command to Install:
-     ```bash
     React
     ```bash
-     npm install react
+    npm install react
+    
     React DOM
     ```bash
-     npm install react-dom
+    npm install react-dom
+    
     React Router
     ```bash
-     npm install react-router-dom
+    npm install react-router-dom
+    
     @heroicons/react
     ```bash
-     npm install @heroicons/react
+    npm install @heroicons/react
+    
     React Icons
     ```bash
-     npm install react-icons
+    npm install react-icons
+    
     Typewriter Effect
      ```bash
      npm install typewriter-effect
+    
      Framer Motion
      ```bash
      npm install framer-motion
+    
      react spring
      ```bash
      npm install react-spring
+    
      crazy image loading
      ```bash
      npm install react-lazy-load-image-component
