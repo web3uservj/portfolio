@@ -48,42 +48,30 @@ You can visit the live version of the portfolio [https://web3uservj.web.app/](#)
    ```bash
    cd portfolio
 
-4. Package Command to Install:
-    React
-    ```bash
-    npm install react
-    
-    React DOM
-    ```bash
-    npm install react-dom
-    
-    React Router
-    ```bash
-    npm install react-router-dom
-    
-    @heroicons/react
-    ```bash
-    npm install @heroicons/react
-    
-    React Icons
-    ```bash
-    npm install react-icons
-    
-    Typewriter Effect
-     ```bash
-     npm install typewriter-effect
-    
-     Framer Motion
-     ```bash
-     npm install framer-motion
-    
-     react spring
-     ```bash
-     npm install react-spring
-    
-     crazy image loading
-     ```bash
-     npm install react-lazy-load-image-component
+## Package Installation
+
+### Core Dependencies
+
+To get the project running, you’ll need to install the following core dependencies:
+
+| Package          | Command to Install                  |
+|------------------|-------------------------------------|
+| **React**        | `npm install react`                 |
+| **React DOM**    | `npm install react-dom`             |
+| **React Router** | `npm install react-router-dom`      |
+
+### Additional Dependencies
+
+These additional packages are required for specific features and animations within the app:
+
+| Package                       | Command to Install                       |
+|-------------------------------|------------------------------------------|
+| **@heroicons/react**           | `npm install @heroicons/react`           |
+| **React Icons**                | `npm install react-icons`                |
+| **Typewriter Effect**          | `npm install typewriter-effect`          |
+| **Framer Motion**              | `npm install framer-motion`              |
+| **React Spring**               | `npm install react-spring`               |
+| **Lazy Load Image Component**  | `npm install react-lazy-load-image-component` |
 
 
 5.Start the development server:
