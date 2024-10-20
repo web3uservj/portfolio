@@ -10,11 +10,11 @@ This is my personal portfolio built using **React** to showcase my skills, proje
 ### Home Page
 ![Home Page](./Home.png)
 
-### About Me Page
-![About Me Page](.Project.png)
-
 ### Projects Page
-![Projects Page](.Skills.png)
+![Projects Page](./Projects.png)
+
+### Skills Page
+![Skills Page](./Skills.png)
 
 
 ### Live Demo
