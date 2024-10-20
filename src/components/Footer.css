@@ -1,0 +1,85 @@
+/* src/components/Footer.css */
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Apply the font globally */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0; /* Remove default body margin */
+  padding: 0; /* Remove default body padding */
+}
+
+.footer {
+  background-color: #343a40; /* Dark background for better contrast */
+  color: #ffffff; /* White text for better visibility */
+  padding: 1rem;
+  display: flex;
+  flex-direction: column; /* Stack items vertically for mobile view */
+  align-items: center;
+  position:relative /* Ensure the footer is positioned relative to its container */
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 1200px; /* Set a max-width for larger screens */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.footer-section {
+  flex: 1;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-center {
+  text-align: center;
+}
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.social-icons a {
+  color: #ffffff; /* White icons */
+  font-size: 1.25rem; /* Adjust icon size for a professional appearance */
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #007bff; /* Change color on hover for a subtle effect */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-left, .footer-center, .footer-right {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-icons {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,232 @@
+/* src/components/Education.css */
+.education-section {
+  padding: 2rem;
+  background-color: #1b1b1b; /* Darker background to match blockchain theme */
+  color: #e0e0e0; /* Lighter text color for contrast */
+  font-family: 'Roboto', sans-serif; /* Modern, tech-inspired font */
+}
+
+.section-title {
+  font-size: 24px;
+  text-align: center;
+  color: #00ffff; /* Blockchain theme color */
+  margin-bottom: 2rem;
+  border-bottom: 2px solid #00bfae; /* Underline with blockchain color */
+  padding-bottom: 2rem;
+}
+
+.timeline {
+  position: relative;
+  max-width: 800px; /* Reduce the maximum width of the timeline */
+  margin: auto;
+  padding: 1rem;
+}
+
+.degree-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem; /* Reduce space between cards */
+  border: 1px solid #2e2e2e; /* Dark border for a tech look */
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.2); /* Glowing shadow */
+  background-color: #292929; /* Slightly lighter background for cards */
+  position: relative;
+  padding-left: 15px; /* Adjust padding to fit smaller image */
+  width: 100%; /* Ensure the card fits within its container */
+}
+
+.card-img {
+  position: absolute;
+  left: -150px; /* Adjust position for smaller image */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 120px; /* Smaller image width */
+  height: auto;
+  border-radius: 50%;
+  padding: 8px; /* Reduced padding */
+  border: 2px solid #00bfae; /* Blockchain theme border color */
+  box-shadow: 0 0 6px rgba(0, 255, 255, 0.2); /* Glowing effect for image */
+}
+
+.education-image {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.education-image.lazyloaded {
+  opacity: 1;
+}
+
+.education-image.lazyloading {
+  opacity: 0.5;
+}
+
+.card-body {
+  padding: 10px;
+  width: calc(100% - 160px); /* Adjust width to fit the reduced image */
+  position: relative;
+}
+
+.body-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  background-color: #333; /* Darker background for header */
+  width: 125%;
+  box-sizing: border-box;
+}
+
+.body-header-title {
+  flex: 2;
+}
+
+.body-header-duration {
+  flex: 1;
+  text-align: right;
+}
+
+.duration {
+  font-size: 16px;
+  color: #00bfae; /* Blockchain theme color */
+}
+
+.card-title {
+  font-size: 20px;
+  color: #00ffff; /* Blockchain theme color */
+}
+
+.card-subtitle {
+  font-size: 15px;
+  color: #e0e0e0; /* Lighter color for subtitle */
+  margin-top: 5px;
+  margin-bottom: 4px;
+}
+
+.body-content {
+  padding: 8px;
+}
+
+.content-list {
+  color: #e0e0e0;
+  padding: 8px;
+}
+
+.content-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content-list li {
+  margin: 8px 0;
+  font-size: 15px;
+}
+
+.score-label {
+  position: absolute;
+  top: 125px;
+  right: -130px;
+  background: #333; /* Blockchain theme background */
+  color: white; /* Text color for score */
+  padding: 0.5rem;
+  border-radius: 10%;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+}
+
+.score-icon {
+  color: #ffca28; /* Color for the trophy icon */
+  font-size: 20px; /* Adjust size as needed */
+}
+
+.visit-button {
+  position: absolute;
+  bottom: 10px;
+  right: -130px;
+  background-color: #76ff03; /* Blockchain theme button color */
+  color: black; /* Button text color */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.visit-button:hover {
+  background-color: #64dd17; /* Lighter blockchain theme color on hover */
+}
+
+/* Mobile Media Queries */
+@media (max-width: 768px) {
+  .degree-card {
+    flex-direction: column;
+    padding-left: 0; /* Remove padding for mobile view */
+    align-items: center;
+    position: relative;
+  }
+
+  .card-img {
+    position: relative;
+    left: 0;
+    width: 100px; /* Smaller image width for mobile */
+    height: auto;
+    margin-top:2rem;
+    margin-bottom: -2rem; /* Space between image and text */
+  }
+
+  .card-body {
+    width: 100%; /* Full width on mobile */
+    padding: 0;
+  }
+
+  .body-header {
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .body-header-title,
+  .body-header-duration {
+    text-align: center;
+    width: 100%;
+  }
+
+  .duration {
+    font-size: 14px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-subtitle {
+    font-size: 14px;
+  }
+
+  .body-content {
+    padding: 5px;
+  }
+
+  .content-list li {
+    font-size: 14px;
+  }
+
+  .score-label {
+    right: 0;
+    top: auto;
+    bottom: 10px;
+    margin-top: 1rem;
+  }
+
+  .visit-button {
+    position: static;
+    margin-top: 1rem;
+  }
+}

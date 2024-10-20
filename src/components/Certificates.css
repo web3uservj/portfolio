@@ -1,0 +1,150 @@
+.certificates {
+  background-color: #111; /* Dark theme */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+.certificates h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.certificates-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.certificate-card {
+  position: relative; /* For overlay positioning */
+  background: #222;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 300px; /* Limit max width */
+  width: 100px; /* Fixed width */
+  height: 430px; /* Fixed height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  transition: transform 0.3s;
+}
+
+.certificate-card:hover {
+  transform: scale(1.05);
+}
+
+
+.certificate-image-container {
+  position: relative;
+  width: 100%;
+  height: 54%; /* Fixed height for image container */
+  overflow: hidden;
+  border: 2px solid #555; /* Frame border color */
+  box-sizing: border-box; /* Include border in the element's total width and height */
+}
+
+.certificate-image {
+  width: 100%;
+  height: 100%; /* Maintain original aspect ratio */
+  object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.certificate-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  color: #fff; /* White text color */
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1.2rem;
+  opacity: 0; /* Hide overlay by default */
+  transition: opacity 0.3s; /* Smooth transition for hover effect */
+  z-index: 1; /* Ensure overlay is on top of image */
+}
+
+.certificate-image-container:hover .certificate-overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.certificate-details {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.certificate-details h3{
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.certificate-details h4{
+  padding-bottom: 10px;
+  font-weight: normal ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.certificate-details p{
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.certificate-actions {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.icon {
+  color: rgba(255, 255, 255, 0.6); /* Semi-transparent white */
+  height:18px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: rgba(255, 255, 255, 1); /* Fully opaque on hover */
+}
+
+
+/* In your Certificates.css file */
+
+.certificates-slider {
+  position: relative;
+}
+
+.certificates-slider .slick-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.certificates-slider .slick-prev,
+.certificates-slider .slick-next {
+  color: #fff; /* Adjust color as needed */
+  z-index: 1; /* Ensure they are above other elements */ 
+}
+
+.certificates-slider .slick-prev {
+  left: 10px; /* Position the left arrow */
+}
+
+.certificates-slider .slick-next {
+  right: 10px; /* Position the right arrow */
+}
+.certificates-slider .slick-dots li button:before {
+  color: #fff; /* Adjust dot color as needed */
+  padding-top: 30px;
+}

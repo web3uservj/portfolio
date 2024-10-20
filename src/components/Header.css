@@ -1,0 +1,126 @@
+.header {
+  background-color: #0a0a0a; /* Dark background for a futuristic look */
+  color: #00ffcc; /* Neon cyan accent color */
+  padding: 10px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Orbitron', sans-serif; /* Futuristic font */
+}
+
+.name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffcc; /* Neon cyan accent color */
+}
+
+.name:hover {
+  text-decoration: none; /* Ensure no underline on hover */
+  color: #00ffcc; /* Neon cyan accent color */
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  display: inline;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  padding: 5px 10px;
+  border-radius: 5px; /* Rounded corners for the links */
+}
+
+.nav-link:hover {
+  color: #00ffcc; /* Neon cyan accent color */
+  background-color: rgba(0, 255, 204, 0.1); /* Light neon background on hover */
+  text-decoration: none;
+}
+
+.nav-link.active {
+  color: #00ffcc; /* Neon cyan accent color */
+  border-bottom: 2px solid #00ffcc; /* Add underline with neon cyan color */
+  
+}
+
+.menu-icon {
+  display: none; /* Hidden by default */
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #00ffcc; /* Neon cyan accent color */
+}
+
+.menu-icon:hover {
+  color: #00cc99; /* Slightly darker neon cyan on hover */
+}
+
+/* Mobile View */
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: row; /* Keep elements in a row */
+    justify-content: space-between;
+  }
+
+  .name {
+    margin-right: auto; /* Keep name aligned to the left */
+  }
+
+  .menu-icon {
+    display: block; /* Show the menu icon */
+  }
+
+  .nav {
+    position: absolute; /* Position the nav */
+    top: 50px; /* Start just below the header */
+    right: 0; /* Align to the right */
+    width: 250px; /* Set the width for the side menu */
+    max-height: calc(100vh - 60px); /* Limit the height to the content area */
+    overflow-y: auto; /* Add scrolling if the content overflows */
+    background-color: #0a0a0a; /* Same background as header */
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    transition: transform 0.3s ease; /* Smooth transition */
+    transform: translateX(100%); /* Initially hidden off-screen */
+    text-align: center;
+  }
+
+  .nav.active {
+    transform: translateX(0); /* Slide in from right */
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+    padding: 10px 0;
+    text-align: left;
+    width: 100%;
+  }
+
+  .nav-link:hover {
+    color: #00ffcc; /* Neon cyan accent color */
+    background-color: rgba(0, 255, 204, 0.1); /* Light neon background on hover */
+    text-decoration: none;
+  }
+}

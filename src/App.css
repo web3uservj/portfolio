@@ -1,0 +1,33 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Global styles */
+body, html {
+  margin: 0; /* Remove default body and html margin */
+  padding: 0; /* Remove default body and html padding */
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Section styles (example for .home and .footer) */
+.home, .footer {
+  margin: 0; /* Ensure no margin around sections */
+  padding: 0; /* Ensure no padding around sections */
+  width: 100%; /* Ensure full-width */
+  background-color: #1e1e1e; /* Example background */
+}
+
+/* Specific to footer */
+.footer {
+  background-color: #343a40; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 1rem 0; /* Vertical padding */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}

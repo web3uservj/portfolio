@@ -1,0 +1,420 @@
+/* General Container */
+.project-container {
+  font-family: Arial, sans-serif;
+  background-color: #0d1117;
+  color: #c9d1d9;
+  margin: 0;
+  padding: 20px;
+}
+
+/* Header Section */
+.headermod {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #161b22;
+  color: #c9d1d9;
+}
+
+.left-icons, .right-icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #30363d;
+  border-radius: 4px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: #21262d;
+}
+
+.icon {
+  font-size: 16px;
+  color: #c9d1d9;
+}
+
+.center-logo {
+  display: flex;
+  align-items: center;
+}
+
+.github-logo {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 16px;
+  color: #c9d1d9;
+}
+
+/* Navigation Section */
+.navigation {
+  display: flex;
+  align-items: center;
+  background-color: #161b22;
+  padding: 10px 20px;
+  border-bottom: 1px solid #30363d;
+}
+
+.nav-item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.nav-icon {
+  font-size: 18px;
+  margin-right: 8px;
+  color: #8b949e;
+}
+
+.right {
+  margin-left: auto;
+}
+
+/* Profile Section */
+.profile {
+  padding: 20px;
+  background-color: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+.profile-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the start of the flex container */
+  flex-wrap: wrap; /* Allows wrapping if necessary */
+}
+
+
+.profile-left {
+  display: flex;
+  align-items: flex-start; /* Align items to the start of the flex container */
+  flex-grow: 1;
+}
+
+/* Profile Icon */
+/* Profile Icon */
+.profile-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures image doesn't overflow the circle */
+  margin-right: 20px;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+}
+
+.profile-info-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-info {
+  font-size: 18px;
+  font-weight: bold;
+  color: #c9d1d9;
+  margin-top:15px;
+}
+
+.profile-username {
+  color: #8b949e;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Projects Title in Profile Section */
+.projects-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.projects-title h2 {
+  font-size: 2rem;
+  color: #00ffff;
+}
+
+.profile-right {
+  display: flex;
+  flex-direction: column; /* Vertical alignment */
+  align-items: flex-end;
+  margin-top: -70px; /* Ensure no additional top margin */
+}
+
+
+.status-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  background-color: #161b22;
+}
+
+.status-icon {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #c9d1d9;
+}
+
+.status-text {
+  font-size: 13px;
+  color: #c9d1d9;
+}
+
+.edit-profile-btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  background-color: #21262d;
+  color: #c9d1d9;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Follow Info */
+.follow-info {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  margin-left: 120px;
+  margin-top: -40px;
+}
+
+.follow-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px; /* Add margin for spacing between items */
+}
+
+.follow-icon {
+  margin-right: 5px;
+  color: #c9d1d9;
+}
+
+.follow-count {
+  font-weight: bold;
+  margin-right: 5px;
+  color: #c9d1d9;
+}
+
+.follow-text {
+  color: #8b949e;
+}
+
+@media (max-width: 768px) {
+  .profile-details {
+    flex-direction: row; /* Align items in a row */
+    justify-content: space-between; /* Space out the items */
+    flex-wrap: nowrap; /* Prevent wrapping */
+    align-items: center; /* Center items vertically */
+  }
+  .profile-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Ensures image doesn't overflow the circle */
+  }
+
+  .profile-left {
+  
+    align-items: flex-start; /* Align follow info to the left */
+    text-align: left;
+    flex-grow: 1; /* Ensure it takes up available space */
+  }
+
+  .profile-right {
+   
+    align-items: flex-end; /* Align status and buttons to the right */
+    text-align: right;
+    margin-top: 0px; /* Remove margin-top */
+  }
+
+  .status-box, .edit-profile-btn {
+    display:none;
+  }
+
+  .follow-info {
+    align-items: flex-end; /* Ensure follow info aligns to the left */
+    text-align: right;
+    margin-left: 100px;
+    margin-top: -40px;
+  }
+}
+
+/* Repositories Header */
+.repositories-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #30363d;
+}
+
+.popular-repositories,
+.customize-pins {
+  font-weight: bold;
+  color: #c9d1d9;
+}
+
+.customize-pins {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Projects Section */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  background-color: #161b22;
+  row-gap: 20px;
+  padding: 20px; /* Ensure there is padding around the grid */
+  margin: 0; /* Center the grid on the page */
+}
+
+/* Media Query for Smaller Screens (e.g., Tablets) */
+@media (max-width: 1024px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 20px; /* Adjust gap for tablet view */
+  }
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: repeat(1, 1fr); /* 1 column */
+    gap: 15px; /* Adjust gap for mobile view */
+  }
+
+}
+
+.project-card {
+  background-color: black;
+  padding: 20px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+  max-width: 350px; /* Adjust the maximum width as needed */
+  height: 430px;
+  margin: 0 auto; /* Center the cards within the grid cell */
+  margin-bottom: 40px;
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border: 2.5px solid #30363d; /* Add this line for the border */
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+.project-image.fade-in {
+  opacity: 1;
+}
+.project-image.loaded {
+  opacity: 1;
+}
+.project-details {
+  color: #c9d1d9;
+}
+
+.project-details h4 {
+  margin: 0;
+  font-size: 18px;
+  color: #58a6ff; /* Blue color for titles */
+}
+
+.project-details h4 .public-text {
+  font-size: 12px;
+  color: #8b949e;
+  background-color: #21262d;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-weight: normal;
+}
+
+.project-details p {
+  margin: 5px 0 0 0;
+  font-size: 14px;
+  color: #8b949e;
+}
+
+.languages {
+  display: flex;
+  margin-top: 5px;
+}
+
+.language-badge {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: #8b949e;
+  margin-right: 10px;
+}
+
+.language-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+/* Specific Colors for Languages */
+.language-dot.css {
+  background-color: #563d7c; /* Purple for CSS */
+}
+
+.language-dot.javascript {
+  background-color: #f1e05a; /* Yellow for JavaScript */
+}
+
+.language-dot.html {
+  background-color: #e34c26; /* Red for HTML */
+}
+
+.visit-btn {
+  background-color: #76ff03;
+  color: black;
+  border: none;
+  padding: 8px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  margin-left: 135px;
+}
+
+.visit-btn:hover {
+  background-color: #64dd17;
+}

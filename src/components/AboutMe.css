@@ -1,0 +1,152 @@
+/* AboutMe.css */
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgb(20, 20, 20); /* Darker background for neon effect */
+  color: #e0e0e0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.main-container {
+  border: 1px solid #666;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0.5rem;
+  flex: 1;
+  position: relative;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  padding-top: 2.5rem;
+}
+
+.about-me-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00ffff; /* Neon cyan */
+  text-align: center;
+  margin-bottom: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+  cursor: pointer;
+}
+
+.about-me-title:hover {
+  background-color: #00ffff; /* Neon cyan background on hover */
+  color: #1e1e1e;
+}
+
+.about-me-content {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.terminal-container {
+  border: 1px solid #666;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 0.5rem;
+  position: relative;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  transition: box-shadow 0.3s;
+}
+
+.terminal-container:hover {
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.8); /* Neon cyan shadow */
+}
+
+.box {
+  padding: 1rem;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+}
+
+.box img {
+  max-width: 100%; /* Adjust to fill the container */
+  height: auto;
+  align-items: center;
+  border-radius: 8px;
+  margin-top: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.box h2 {
+  margin-bottom: 0.5rem;
+  color: #00ffff; /* Neon cyan */
+}
+
+.box p {
+  line-height: 1.5;
+  margin: 0;
+}
+
+.terminal-text {
+  color: #00ff00; /* Keep green text for terminal */
+}
+
+.default-text {
+  color: #c5c8c6;
+  margin-bottom: 0.5rem;
+}
+
+.terminal-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #333;
+  padding: 0.3rem;
+  padding-left: 1rem;
+  border-bottom: 1px solid #666;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.terminal-header .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 0.2rem;
+}
+
+.terminal-header .dot.red {
+  background-color: #ff5f56;
+}
+
+.terminal-header .dot.yellow {
+  background-color: #ffbd2e;
+}
+
+.terminal-header .dot.green {
+  background-color: #27c93f;
+}
+
+@media (max-width: 768px) {
+  .about-me-content {
+    flex-direction: column;
+  }
+
+  .terminal-container {
+    margin-bottom: 10px;
+  }
+
+  .box {
+    padding: 0rem;
+  }
+}
