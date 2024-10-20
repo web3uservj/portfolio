@@ -5,6 +5,18 @@
 ## Overview
 This is my personal portfolio built using **React** to showcase my skills, projects, and experiences. The portfolio follows a **dark theme** with **Web3** and **cryptocurrency** elements, featuring a futuristic and professional design. It includes multiple sections like **Home**, **About Me**, **Projects**, **Skills**, **Education**, **Certificates**, and **Contact**.
 
+## Screenshots
+
+### Home Page
+![Home Page](./Home.png)
+
+### About Me Page
+![About Me Page](.Project.png)
+
+### Projects Page
+![Projects Page](.Skills.png)
+
+
 ### Live Demo
 You can visit the live version of the portfolio [https://web3uservj.web.app/](#).
 
