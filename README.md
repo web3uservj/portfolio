@@ -50,7 +50,7 @@ You can visit the live version of the portfolio [https://web3uservj.web.app/](#)
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/portfolio.git
+   git clone https://github.com/web3uservj/portfolio.git
 
 2. Create react app:
      ```bash
